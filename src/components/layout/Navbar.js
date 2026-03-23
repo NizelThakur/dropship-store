@@ -7,7 +7,7 @@ import styles from './Navbar.module.css';
 
 export default function Navbar() {
   const pathname = usePathname();
-  const { cartCount } = useCart();
+  const {cartCount, setIsCartOpen} = useCart();
 
   return (
     <nav className={styles.navbar}>
