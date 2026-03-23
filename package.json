@@ -1,24 +1,26 @@
 {
-  "name": "dropship-store",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "\"D:\\AntiGravity\\node-v20.11.1-win-x64\\node.exe\" node_modules/next/dist/bin/next dev",
-    "build": "\"D:\\AntiGravity\\node-v20.11.1-win-x64\\node.exe\" node_modules/next/dist/bin/next build",
-    "start": "\"D:\\AntiGravity\\node-v20.11.1-win-x64\\node.exe\" node_modules/next/dist/bin/next start",
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "next": "16.2.1",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
-  },
-  "devDependencies": {
-    "eslint": "^9",
-    "eslint-config-next": "16.2.1",
-    "playwright": "^1.58.2",
-    "playwright-extra": "^4.3.6",
-    "playwright-stealth": "^0.0.1",
-    "puppeteer-extra-plugin-stealth": "^2.11.2"
-  }
+    "name": "dropship-store",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start",
+          "lint": "next lint"
+    },
+    "dependencies": {
+          "next": "14.2.16",
+          "react": "^18",
+          "react-dom": "^18",
+          "lucide-react": "^0.344.0",
+          "clsx": "^2.1.0",
+          "tailwind-merge": "^2.2.1"
+    },
+    "devDependencies": {
+          "autoprefixer": "^10.0.1",
+          "postcss": "^8",
+          "tailwindcss": "^3.3.0",
+          "eslint": "^8",
+          "eslint-config-next": "14.2.16"
+    }
 }
