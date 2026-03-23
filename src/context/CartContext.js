@@ -7,6 +7,7 @@ const CartContext = createContext();
 export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+      const [isLoaded, setIsLoaded] = useState(false);
 
   // Load cart from local storage on mount
   useEffect(() => {
@@ -14,12 +15,17 @@ export function CartProvider({ children }) {
     if (savedCart) {
       setCartItems(JSON.parse(savedCart));
     }
+        setIsLoaded(true);
+    
   }, []);
 
   // Save cart to local storage when it changes
-  useEffect(() => {
+  useEffect(() => 
+    {
+          if (isLoaded) {
     localStorage.setItem('dropship_cart', JSON.stringify(cartItems));
-  }, [cartItems]);
+          }
+  }, [cartItems, isLoaded]);
 
   const addToCart = (product) => {
     setCartItems((prevItems) => {
