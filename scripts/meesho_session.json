@@ -1,0 +1,186 @@
+{
+  "cookies": [
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AKhCRwggFcoWofWx6BXIGgnvN9CBXRwOBBGyyTcYagJIX3zmQnnzupPh5xvwKWbnheJbE_9XH4yCqFCGaTWqdJI",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1789822499.669324,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SNID",
+      "value": "ABDP0S327N4QeBpe7IJL-_1QV77Adndykaxp-pGil1Kg2zr9vlD6HpT3hBFNEyFUZp8qgQAizO-Mxjg65LhSTBF43uNzMIwUbg",
+      "domain": ".google.com",
+      "path": "/verify",
+      "expires": 1790081653.49773,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bm_ss",
+      "value": "ab8e18ef4e",
+      "domain": ".meesho.com",
+      "path": "/",
+      "expires": 1774274047.145887,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bm_s",
+      "value": "YAAQvgzVF13ePeicAQAAVn3CGgWSYVU1slwYM5JZJ42/HYf0wB+1JBGzPz4anzODi7Znk+kAubuI0pXgX8sQqgehE0Q6bjCgK5D3hdReQD4kdAHbAHmpwTe7gb6F4iZt3v7LtgyWAYTR63xMdu6YHgCQzJSBZuI7RovstnLQcWFGmt7gDLFaBhtQOLbdipjU3JHg9NgCbPE0hE620B5DvSHL3nT5Q7ejEVfDPlP24IYMvL77VBlp/3fXp7eBWJIMfZhg0Nb4vPeWOT5nDdLHjaweUrdGWVdS+AfgEIw554SMh6465OBxIIWgzhEUqXwMED2NnB4FZUsMidC6nrji8MeOy9z4beC90wgYR+NWE2h4AaGAkWBGqwIJ9egEeuan0CYDPeFP6DncIxoXhLXfAW3Gq5+JqxqRHy46MAPQhZ5YIk4RlfyEaovpz9IQXAOI32xds2a28z5Z4xYWK5wDu2O3sOgl7Xj3eQrbTZVV3pIBA7yZUvPnYJeA++ciOP24UhwckLuC/qytJ0JS3ktX0YgbUE/eAbxOFKQei+Ushi51NcYtsavgdYccdTDR4+SRCVIdImCXn63cy34U/2du6/7NLKuepTeChRQVX1beE5OJSEDyFFW0wXtEZh+aNswS3vrqbyt+oCk9vMp451DJR1XT9wjmFZo1hris2hx8zo2WP8MQjaYkw74qDv3rtywar4r2oqfTZc+sk0kJ2xL1aW6fC9hJMasN0//LNFoKF+2e00SOks9J4f+ODCR8ROiOqBvYqalf63Pu6Q4tJQneFSXCRjQq5iR7v7MVzmFx5i8eNHpcNKmuv2kwfjRmmw7PVqNKPE+8o28=",
+      "domain": ".meesho.com",
+      "path": "/",
+      "expires": 1776948847.146427,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bm_sc",
+      "value": "1~1~935382382~YAAQvgzVF17ePeicAQAAVn3CGgdp62thMPtmCmH6w6fwyZsa4KHjmszWmRrMA+gFNrnY5zG/sFvIcFnu0AR3u7foqgiw2KqTwtSyOxCezUGchrVXKDTihYFfaDjlOSO/EtbramkNZfw0yrkk0PaicexnVhDtWdS4l8EJbsaTwEQFU3m/RXJ6PcCJwWBhzNgfayycFblzSOrQOvQGXwPIugl5xK5e3qDp/evVpTKpQM3qgM8haWCSDgn/+X/kl8osFeACQAGqViBPtAUxKsNlAdZUbXWL4MmCzEsXLttz11L5XwKumRC4hZfJrfyxM0/izhI2biVUjENMDwgpSFTlX7LzRHpv8a/3+Fu+jQzjO9O6gbioO0vJE9/Py66OIQIqEmtpTsqczW4mE/XnC0dEskEwE970sKq8dsAT8tAYXnTj4L712dP2HHLEg/1bGoizTPLstJQltw==~0~0~0",
+      "domain": ".meesho.com",
+      "path": "/",
+      "expires": 1774271107.146518,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bm_so",
+      "value": "8F40B419F5FC45257E2BCAA2301A07172B0135238063FAFB8BC9E30610306B71~YAAQvgzVF1/ePeicAQAAVn3CGgfkQc3+a72n2zklmkksScqaQLnSGpZ9Ap6tvpo6+GXSHcMrM7zmmvxUuwP9guSo9I9hQ5tOVwzKphyHmZBMPfSmOG+tCnUbjF7lG2mt+yLs7CnddtkJZ1bjyYFIAqNpVwmadSi4UmXnlNKyl/Mo53Tw4ijxtBfzruB4GjQ0jIYO/GDwM6HrsDknYYyrssmK/PytBhu50x+x80fH6ER9EOdZOa9OX5d1ecGlSz9muWog+/eqRKQfhurW+Bm9hKxFMKmZqbfIZwn6WiVhYJlmQUkKyDh+fwJIsq4kvqVhXbDU8AiU1IgNVcI1LKoetKL1XCE4Zzdj3Yao03bYWqQ6ipoZRx+iL+nl7aio2COsxP+uErbqJN/l1rQWafVB3Pd1DsCC/rXNAvlcvuyo9CtL19XrGcL+XZEtXIjLrNKtujtwNaUFZ8PjAwTO/lMMh5lvXQq6VrQZPlDQP6AU+FV0OU9xoOveDw==",
+      "domain": ".meesho.com",
+      "path": "/",
+      "expires": 1774356847.146586,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bm_sz",
+      "value": "C91FCE12C5E424D3D5B87897838FB788~YAAQvgzVF2DePeicAQAAVn3CGh82GBPszhVOWG+ZcQtUj+TH22q7G+e53FdwDfCCmcMTy5NMTYNKGifr+wmMSv4rzvEjbOLW0iMnZ3O65bpzO8HwvUSiMpzQRtICxlOaQTaIvgoyYdnT3dCgPHcxqf1Vr96H+b+PH7f4PGMBfV/jdc0FfdukNX35ZA56/x15HCz1B++5B4Kt+wyb09KV03+diiLpUD+zSqNpuB3lp8SAqA8oT7ZyITQJFZROkQLgIyQ+9BkYfu1Kb0t9Qf+9PEY+SWwFhn8Dba2wrRwoaav0HjtuLYxIVLM36ofC1WNwl6iTW6M6HGLdzRtmYgp23ju5/bkEZX9S7zf8aEqqIwO6QatT3K49vdeDRObuKHz7qYLJIuS5zSBLoDrScL81Udjk~3622468~3420742",
+      "domain": ".meesho.com",
+      "path": "/",
+      "expires": 1774284847.146683,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bm_lso",
+      "value": "8F40B419F5FC45257E2BCAA2301A07172B0135238063FAFB8BC9E30610306B71~YAAQvgzVF1/ePeicAQAAVn3CGgfkQc3+a72n2zklmkksScqaQLnSGpZ9Ap6tvpo6+GXSHcMrM7zmmvxUuwP9guSo9I9hQ5tOVwzKphyHmZBMPfSmOG+tCnUbjF7lG2mt+yLs7CnddtkJZ1bjyYFIAqNpVwmadSi4UmXnlNKyl/Mo53Tw4ijxtBfzruB4GjQ0jIYO/GDwM6HrsDknYYyrssmK/PytBhu50x+x80fH6ER9EOdZOa9OX5d1ecGlSz9muWog+/eqRKQfhurW+Bm9hKxFMKmZqbfIZwn6WiVhYJlmQUkKyDh+fwJIsq4kvqVhXbDU8AiU1IgNVcI1LKoetKL1XCE4Zzdj3Yao03bYWqQ6ipoZRx+iL+nl7aio2COsxP+uErbqJN/l1rQWafVB3Pd1DsCC/rXNAvlcvuyo9CtL19XrGcL+XZEtXIjLrNKtujtwNaUFZ8PjAwTO/lMMh5lvXQq6VrQZPlDQP6AU+FV0OU9xoOveDw==~1774270447511",
+      "domain": ".www.meesho.com",
+      "path": "/",
+      "expires": 1776862447,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ak_bmsc",
+      "value": "53CEFCA22A59D42CE9F715E0B6F42D72~000000000000000000000000000000~YAAQpgzVFyrT+PecAQAAQoDCGh+Q+mXMThgLad6IodSi+aUEf6OmDydMj4nOtHBsXSpJAEY84izoQAM5qE9IcJCZrXafQcJmV+2NaSoLkUF58FEpjCaXiWd1k06fyvUL7H3QiElMgjpDLUiWAD8LPdcNK8liahyS86wurmm/ro5jGPDRRjDyGeMHPrF74mYZCfEwKkGfyNlYgcTk0xTccg8pp4AJ8xo71DbYzBczdYg3ke4IUv6DqVsXDQY/PEyDpW+LeoFU1U0bzfOoyDBFMzXiOY6n4ewUecahW/D3cmMkZyzlz0Vlg6XjgBMmPtytv1j+oXT/gmYmI2uLtnN9vqS7Xcs8u6hy8v1vn+02Ht0NO7cEj6TUtxBobTcX1MiH7A3WyFJdIitW6O3lYi3/zmqdWS4K4ENX7Pjc/WFk3kOqqA==",
+      "domain": ".meesho.com",
+      "path": "/",
+      "expires": 1774277646.771283,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_abck",
+      "value": "97BD71AAB63404CD3074D5EB2293F375~-1~YAAQpgzVF07T+PecAQAAOILCGg9s7dBjIldX9lJKTU1wIpC7TlnEs2js95M8GTVSNyCZLPC95s5EFbqGezgAKtkw/LJv9F4oCQeSoasuvf6VQdgH1nF+vw5c3Ks/yr5ScwlODBoUywTBA8bDSAVtoes4E0l6Roarb6wcvw6x1Y6OQfNqmvTmLQ7VeeX9u28Mx0LDbseiTeEeZASpNpSFFm34L3B4kZs/esmXV9JmfO79ZdN70AGh7xlKYIg81Xz6nsaXyuWLAZYkvSHvH+NeCMWLrN5lArlO2wmOA/cOvfYjnwCRhkxE3LZP/+ojTFhOiwMz7Ky2+We6lLOM43vGtTWmo88uWWIqigeye/a1B3HA8Pvg/Vaf8OSmApoW4KDZV3tDD/B/XLMneLSAb8YuwNq5Yo10IKFWoW6g4BxRLij2O/+SPiXNtvz2udP/JZ3GdY/TCX5nVDUgHpXyoiiA9/ORSVmtBqOWME9GBXhmI/3N0C/zvKKevBPWLfr83+RBt+0C8x5VRkVtMGfczQpMl0cGvcl8NoCtZ/TgBdxCeZUe7Sh5J/gcql5JxKA2qi1Ce3W9ZMBxBpeo/Q==~-1~-1~-1~AAQAAAAF%2f%2f%2f%2f%2fzUKAuFsqUE9YZ60slZYF5QUAEh4uhSXO0rrFQhKTZVjQduBBkjJH540rGDUcNiaVEBN84fzqMMtiPigUwedi1RegCa1pa5tIhnw~-1",
+      "domain": ".meesho.com",
+      "path": "/",
+      "expires": 1805806448.263048,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AEC",
+      "value": "AaJma5v-Ua-nVWGepH0swpA8sVNwgEWUVseTtiGz2_x_JfiP2oUyKyu_4g",
+      "domain": ".google.com",
+      "path": "/",
+      "expires": 1789822453.637419,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Secure-BUCKET",
+      "value": "CPYD",
+      "domain": ".google.com",
+      "path": "/",
+      "expires": 1789822453.637565,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Secure-STRP",
+      "value": "AEEP7gLipObKbeUUc-AAAeJqzD5NT6OyDJM8SXyzNZltIDQOu__KCJbZg0yWco11zKEHLNbWyfXx7RSyflXyJiMutR-S77c2L20n",
+      "domain": ".google.com",
+      "path": "/",
+      "expires": 1774270804.724693,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "GOOGLE_ABUSE_EXEMPTION",
+      "value": "ID=39e3151d11c45327:TM=1774270453:C=R:IP=2409:40e1:3011:f8bd:a0f7:38f1:143e:7aa2-:S=kRUtPaCvUs_TttXAT3m95Ec",
+      "domain": ".google.com",
+      "path": "/",
+      "expires": 1774281253.668133,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "NID",
+      "value": "530=BUI7vxfAxPbGiKqrpEUSFwXv6zySJo-5Bd6KdsZmMPa-mjc2x8Mo6KPd3rHIbaQh9uvjv0lgQudjj6K_PZnpnSfRnhVlhXprmJZ6vUm9wabZMePY9enhGZaumJCl0GYn8GhmsErzNzGVFh1lMM819GK-NJ9am2UgOCbqtLEoprC1ve-2nWUUedsvR1KxBNdOpojGmogI4m0V1ID95nFZ-fy59Jr_03FqFEAs5GYbW-be8i_kOscxGcrrEUk5Qgn5UHM",
+      "domain": ".google.com",
+      "path": "/",
+      "expires": 1790081653.497523,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "MWhkZXJuZWNtYnhw"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AKhCRwjFtCsjk88EQionG1V2SH2Smf3ewdvXXS6YssNEBYCJa7pnWVXILKKbVAeqHL9Aat_KOKt5RdCK7p-9hZC3ocNQYJj5HUdWu0G0Zccouv9zRB-winl-nw4J1KrM"
+        },
+        {
+          "name": "rc::f",
+          "value": "0aALbyjnYJP-CajiSW6guW9PTpnaSAvhw6mgWjdit5Y3cZTjs1VJxapdfVuzAy2mP-ZGFbIio"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.meesho.com",
+      "localStorage": [
+        {
+          "name": "ak_a",
+          "value": "97BD71AAB63404CD3074D5EB2293F375"
+        },
+        {
+          "name": "ak_ax",
+          "value": "-1"
+        }
+      ]
+    }
+  ]
+}
