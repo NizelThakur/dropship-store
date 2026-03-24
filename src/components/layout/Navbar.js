@@ -19,7 +19,6 @@ export default function Navbar() {
         <div className={styles.navLinks}>
           <Link href="/" className={`${styles.link} ${pathname === '/' ? styles.active : ''}`}>Home</Link>
           <Link href="/shop" className={`${styles.link} ${pathname?.startsWith('/shop') ? styles.active : ''}`}>Shop</Link>
-          <Link href="/admin" className={`${styles.link} ${pathname?.startsWith('/admin') ? styles.active : ''}`}>Admin</Link>
         </div>
 
         <div className={styles.actions}>
