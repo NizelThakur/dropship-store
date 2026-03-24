@@ -173,8 +173,8 @@
 .checkoutBtn {
   display: block;
   text-align: center;
-  background-color: var(--foreground);
-  color: var(--background);
+  background-color: var(--accent-primary);
+  color: white;
   padding: 1.2rem;
   border-radius: 12px;
   text-decoration: none;
