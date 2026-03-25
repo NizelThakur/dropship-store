@@ -1,181 +1,291 @@
 .adminPage {
-  display: flex;
-  min-height: calc(100vh - 70px);
-  background-color: var(--bg-tertiary);
+    display: flex;
+    min-height: calc(100vh - 70px);
+    background-color: var(--bg-tertiary);
 }
 
 .sidebar {
-  width: 250px;
-  background-color: var(--bg-card);
-  border-right: 1px solid var(--border-subtle);
-  padding: 2rem;
+    width: 250px;
+    background-color: var(--bg-card);
+    border-right: 1px solid var(--border-subtle);
+    padding: 2rem;
 }
 
 .sidebar .brand {
-  font-size: 1.5rem;
-  margin-bottom: 2.5rem;
-  font-weight: 800;
-  color: var(--text-primary);
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
 }
 
 .sidebar .brand span {
-  color: var(--accent-primary);
+    color: var(--accent-primary);
 }
 
 .subtitle {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  margin-top: 0.25rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
 }
 
 .headerActions {
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .syncBtn {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  background-color: transparent;
-  border: 1px solid var(--border-subtle);
-  padding: 0.75rem 1.25rem;
-  border-radius: var(--radius-md);
-  font-weight: 600;
-  color: var(--text-primary);
-  transition: all var(--transition-fast);
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background-color: transparent;
+    border: 1px solid var(--border-subtle);
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: all var(--transition-fast);
+    cursor: pointer;
 }
 
 .syncBtn:hover:not(:disabled) {
-  background-color: var(--bg-tertiary);
-  border-color: var(--text-muted);
+    background-color: var(--bg-tertiary);
+    border-color: var(--text-muted);
 }
 
 .syncBtn.syncing svg {
-  animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .statTrend {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #10b981;
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #10b981;
 }
 
 .statusDot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: #10b981;
-  border-radius: 50%;
-  margin-left: 0.5rem;
-  box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #10b981;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
 }
 
 .dualGrid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 2rem;
-  align-items: start;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    align-items: start;
 }
 
 .sectionHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
 }
 
 .sectionHeader h2 {
-  font-size: 1.25rem;
-  margin: 0;
+    font-size: 1.25rem;
+    margin: 0;
 }
 
 .sectionHeader a {
-  font-size: 0.85rem;
-  color: var(--accent-primary);
-  font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--accent-primary);
+    font-weight: 600;
 }
 
 .orderId {
-  font-family: var(--font-geist-mono);
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+    font-family: var(--font-geist-mono);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
 }
 
 .automationStatus {
-  font-weight: 600;
-  color: var(--text-primary);
-  font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.9rem;
 }
 
 .automationLog {
-  background-color: var(--bg-card);
-  padding: 2rem;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border-subtle);
-  box-shadow: var(--shadow-sm);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+    background-color: var(--bg-card);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .lastSync {
-  font-size: 0.8rem;
-  color: var(--text-muted);
+    font-size: 0.8rem;
+    color: var(--text-muted);
 }
 
 .logList {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  overflow-y: auto;
-  max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+    max-height: 400px;
 }
 
 .logItem {
-  padding: 1rem;
-  background-color: var(--bg-tertiary);
-  border-radius: var(--radius-md);
-  border-left: 3px solid var(--accent-primary);
+    padding: 1rem;
+    background-color: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--accent-primary);
 }
 
 .logTime {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  font-family: var(--font-geist-mono);
-  display: block;
-  margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-family: var(--font-geist-mono);
+    display: block;
+    margin-bottom: 0.25rem;
 }
 
 .logType {
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  background: var(--accent-primary);
-  color: white;
-  padding: 0.1rem 0.4rem;
-  border-radius: 4px;
-  margin-bottom: 0.5rem;
-  display: inline-block;
+    font-size: 0.7rem;
+        font-weight: 700;
+    text-transform: uppercase;
+    background: var(--accent-primary);
+    color: white;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    display: inline-block;
 }
 
 .logMsg {
-  font-size: 0.9rem;
-  margin: 0;
-  color: var(--text-primary);
-  line-height: 1.4;
+    font-size: 0.9rem;
+    margin: 0;
+    color: var(--text-primary);
+    line-height: 1.4;
 }
 
 @media (max-width: 1200px) {
-  .dualGrid {
-    grid-template-columns: 1fr;
-  }
+    .dualGrid {
+          grid-template-columns: 1fr;
+    }
+}
+
+/* Missing Admin Styles Added */
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.statCard {
+    background-color: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-sm);
+}
+
+.statCard h3 {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+}
+
+.statValue {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.ordersSection {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-sm);
+}
+
+.tableWrapper {
+    overflow-x: auto;
+}
+
+.dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.dataTable th {
+    padding: 1rem 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--border-subtle);
+}
+
+.dataTable td {
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid var(--border-subtle);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.badge {
+    padding: 0.25rem 0.6rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.pending {
+    background-color: #fef08a;
+    color: #854d0e;
+}
+
+.fulfilled {
+    background-color: #bbf7d0;
+    color: #166534;
+}
+
+.actionBtn, .socialBtn, .primaryBtn {
+    background-color: var(--accent-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity var(--transition-fast);
+    border: none;
+}
+
+.actionBtn:hover, .socialBtn:hover, .primaryBtn:hover {
+    opacity: 0.9;
+}
+
+.actionBtn:disabled {
+    background-color: var(--border-subtle);
+    color: var(--text-muted);
+    cursor: not-allowed;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
 }
