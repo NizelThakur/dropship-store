@@ -1,8 +1,6 @@
 import styles from "./page.module.css";
 import ProductCard from "@/components/ui/ProductCard";
 import { fetchTrendingProducts } from "@/lib/meeshoService";
-import fs from 'fs';
-import path from 'path';
 
 export default async function Shop() {
   let products = [];
