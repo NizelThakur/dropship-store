@@ -129,8 +129,8 @@ export default function AdminDashboard() {
             <span className={styles.statTrend}>+12% from last week</span>
           </div>
           <div className={styles.statCard}>
-            <h3>Profit (20% Avg)</h3>
-            <p className={styles.statValue}>₹249.00</p>
+            <h3>Profit (40% Avg)</h3>
+            <p className={styles.statValue}>₹498.00</p>
             <span className={styles.statTrend}>+8% growth</span>
           </div>
           <div className={styles.statCard}>
@@ -198,8 +198,8 @@ export default function AdminDashboard() {
                 </thead>
                 <tbody>
                   {[
-                    { name: "Neon Rush Sneakers", price: "₹120.00", margin: "20%" },
-                    { name: "Minimalist Infinity Watch", price: "₹155.00", margin: "20%" }
+                    { name: "Neon Rush Sneakers", price: "₹168.00", margin: "40%" },
+                    { name: "Minimalist Infinity Watch", price: "₹217.00", margin: "40%" }
                   ].map((product, idx) => (
                     <tr key={idx}>
                       <td>{product.name}</td>
