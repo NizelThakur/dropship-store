@@ -3,27 +3,31 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import ProductCard from "@/components/ui/ProductCard";
 
-export default function Home() {
-  const trendingProducts = [
-    {
-      id: 1,
-      name: "Neon Rush Sneakers",
-      price: 120.00,
-      image: "/product_sneakers_1774254895697.png"
-    },
-    {
-      id: 2,
-      name: "Oversized Streetwear Hoodie",
-      price: 65.00,
-      image: "/product_hoodie_1774254914664.png"
-    },
-    {
-      id: 3,
-      name: "Minimalist Infinity Watch",
-      price: 155.00,
-      image: "/product_watch_1774254935233.png"
+// Helper: tries to load live synced products, falls back to mock
+function getProducts() {
+  try {
+    const data = require('@/data/products.json');
+    if (data && data.length > 0) {
+      return data.slice(0, 4).map(p => ({
+        ...p,
+        id: p.id || String(Math.random()),
+        price: p.price || parseFloat((p.meeshoPrice * 1.4).toFixed(2)),
+      }));
     }
+  } catch (e) {
+    // Fall through to mock
+  }
+  // Fallback mock products shown until first sync
+  return [
+    { id: "m1", name: "Vintage Oversized Denim Jacket", price: 840, image: "https://images.unsplash.com/photo-1576871333020-22105658e23b?q=80&w=600" },
+    { id: "m2", name: "Cyberpunk Techwear Joggers",    price: 924, image: "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=600" },
+    { id: "m3", name: "Retro Future Sunglasses",       price: 336, image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=600" },
+    { id: "m4", name: "Minimalist Leather Backpack",   price: 1344, image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=600" },
   ];
+}
+
+export default async function Home() {
+  const trendingProducts = getProducts();
 
   return (
     <div className={styles.page}>
@@ -32,7 +36,7 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>Discover Your Next Favorite Look</h1>
-          <p className={styles.heroSub}>Curated premium fashion hand-picked from top trending dropship suppliers. Unbeatable value.</p>
+          <p className={styles.heroSub}>Curated premium fashion hand-picked from top trending suppliers. Unbeatable value.</p>
           <div className={styles.heroActions}>
             <Link href="/shop" className={styles.primaryBtn}>Shop the Collection</Link>
             <Link href="#trending" className={styles.secondaryBtn}>View Trending</Link>
@@ -49,7 +53,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trending Section */}
+      {/* Trending Section — live products from hourly sync */}
       <section id="trending" className={styles.trendingSection}>
         <div className={styles.sectionHeader}>
           <h2>Trending Now</h2>
