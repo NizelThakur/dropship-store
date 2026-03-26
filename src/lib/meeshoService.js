@@ -1,10 +1,7 @@
 /**
- * Meesho Integration Service
- * Simulates fetching trending products from Meesho and applying dropship margins.
+ * Product Service
+ * Loads trending products with dropship margins applied.
  */
-
-import fs from 'fs';
-import path from 'path';
 
 export const fetchTrendingProducts = async () => {
   // Simulate network delay for UI realism
