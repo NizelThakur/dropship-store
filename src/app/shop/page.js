@@ -25,7 +25,6 @@ export default async function Shop() {
     <div className={styles.shopPage}>
       <header className={styles.header}>
         <h1>The Trending Collection</h1>
-        <p>Handpicked trending styles with our curated 40% quality guarantee.</p>
       </header>
       
       <div className={styles.container}>
