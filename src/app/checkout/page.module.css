@@ -1,22 +1,58 @@
 .checkoutPage {
   min-height: calc(100vh - 80px);
-  padding: 4rem 2rem;
-  background-color: var(--background);
+  padding: 3rem 2rem;
+  background-color: #fcfcfc;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
+}
+
+.stepIndicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.step {
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  background-color: #f0f0f0;
+  color: #888;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.activeStep {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.stepDivider {
+  flex: 1;
+  max-width: 60px;
+  height: 2px;
+  background-color: #eee;
+}
+
+.gridContainer {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 3rem;
 }
 
 .formSection h2,
+.paymentSection h2,
 .summarySection h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.6rem;
+  font-weight: 800;
   margin-bottom: 2rem;
+  color: #1a1a1a;
 }
 
 .form {
@@ -25,102 +61,248 @@
   gap: 1.5rem;
 }
 
-.formGroup {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
 .formGroup label {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #666;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 .formGroup input {
-  padding: 0.8rem 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
   font-size: 1rem;
-  transition: border-color 0.2s;
+  transition: all 0.2s;
+  background-color: #fff;
 }
 
 .formGroup input:focus {
   outline: none;
-  border-color: var(--foreground);
+  border-color: #000;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.03);
 }
 
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-.submitBtn {
-  margin-top: 1rem;
+.submitBtn, .whatsappBtn {
+  width: 100%;
   padding: 1.2rem;
-  background-color: var(--foreground);
-  color: var(--background);
   border: none;
-  border-radius: 12px;
+  border-radius: 16px;
   font-size: 1.1rem;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
 }
 
-.submitBtn:hover {
+.submitBtn {
+  background-color: #000;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.whatsappBtn {
+  background-color: #25D366;
+  color: #fff;
+  margin-top: 1.5rem;
+}
+
+.submitBtn:hover, .whatsappBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  filter: brightness(1.1);
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  color: #666;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.upiCard {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.upiHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px dashed #eee;
+}
+
+.upiLabel {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.upiValue {
+  font-size: 1rem;
+  color: #000;
+  word-break: break-all;
+}
+
+.copyBtn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.qrContainer {
+  padding: 2rem;
+  background-color: #fafafa;
+  border-radius: 16px;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.qrCode {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.qrHelp {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.amountBanner {
+  background-color: #000;
+  color: #fff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amountBanner strong {
+  font-size: 1.3rem;
+}
+
+.confirmationBox h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.confirmationBox p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
 }
 
 .summaryCard {
-  background-color: #fafafa;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 2rem;
   border: 1px solid #eee;
-  border-radius: 16px;
-  padding: 1.5rem;
 }
 
 .summaryItem {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
-  color: #555;
-  font-size: 0.95rem;
+  color: #666;
+  font-weight: 500;
 }
 
 .summaryTotal {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #eee;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
-  font-weight: 700;
   font-size: 1.2rem;
+  font-weight: 800;
+  color: #000;
 }
 
-.success, .empty {
-  min-height: calc(100vh - 80px);
+.trustBadge {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.badgeItem {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.badgeItem span {
+  font-size: 1.8rem;
+  background: #f0f0f0;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  border-radius: 12px;
+}
+
+.badgeItem strong {
+  display: block;
+  font-size: 1rem;
+}
+
+.badgeItem p {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.success, .empty {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 2rem;
 }
 
 .successCard {
-  max-width: 500px;
-  background-color: white;
-  padding: 3rem;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+  max-width: 450px;
+  background: #fff;
+  padding: 4rem 3rem;
+  border-radius: 30px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
 }
 
 .successIcon {
-  width: 100px;
-  height: 100px;
-  background-color: #10b981;
-  color: white;
+  width: 80px;
+  height: 80px;
+  background-color: #25D366;
+  color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -131,21 +313,21 @@
 .continueBtn {
   display: inline-block;
   margin-top: 2rem;
-  padding: 1rem 2rem;
-  background-color: var(--foreground);
-  color: var(--background);
+  padding: 1.2rem 2.5rem;
+  background-color: #000;
+  color: #fff;
   text-decoration: none;
+  font-weight: 700;
   border-radius: 50px;
-  font-weight: 600;
-  transition: opacity 0.2s;
+  transition: transform 0.3s;
 }
 
 .continueBtn:hover {
-  opacity: 0.9;
+  transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .container {
+@media (max-width: 900px) {
+  .gridContainer {
     grid-template-columns: 1fr;
   }
   
